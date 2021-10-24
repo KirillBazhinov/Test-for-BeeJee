@@ -1,0 +1,134 @@
+*{margin:0;padding:0; box-sizing:border-box;}
+a{text-decoration:none;}
+html{
+	background: url(../img/background.jpg) repeat #FFFACD;
+	height: 100%;
+}
+body {
+	display: flex;
+    flex-direction: column;
+	height: 100%;
+}
+.max_width {
+	max-width:1024px;/*Максимальная ширина контента*/
+	margin: 0 auto;
+}
+/*всё превращаем в флексы по умолчанию*/
+body * {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/*Подвал и чердак, общие стили*/
+footer, header {
+	border:1px solid white;
+	border-radius:10px;
+	background-color:white;
+	width:100%;
+	flex: 0 0 100px;
+	margin:20px 0 20px 0;
+}
+.main  {
+	/*flex: 1 0 auto;*/
+	padding-bottom:30px;
+}
+/*контент общие стили*/
+.main content {
+	border:1px solid white;
+	border-radius:10px;
+	background-color:white;
+	height:100%;
+	overflow: hidden;
+	padding-bottom: 50px;
+}
+/*Стили главного окна*/
+.main_content {
+	width:100%;
+	flex-direction: column;
+}
+.main_content h2 {
+	margin-top:20px;
+}
+.main_content h1 {
+	margin:30px 0;
+}
+.login {
+	flex-direction: column;
+	margin-top:20px;
+}
+.login div {
+	margin-bottom:20px;
+}
+.base {
+	flex-direction: column;
+	width: 80%;
+}
+.form_main {
+	justify-content: space-between;
+    width: 100%;
+}
+.main_item {
+	width: 100%;
+    border: 2px solid #817f8b ;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+.main_item div {
+	width: 40%;
+	margin:0 10px;
+	flex-direction: column;
+	align-items: start;
+}
+.main_item p {
+	margin-top:5px;
+}
+.frame {
+	width: 90%;
+	margin:10px;
+	border-radius: 10px;
+}
+.frame_header {
+	margin-left: 20px;
+    padding: 0 10px;
+}
+.frame p {
+	margin:10px;
+}
+.main_item label {
+	cursor:pointer;
+}
+.frame textarea {
+	width: 95%;
+    height: 150px;
+    margin-bottom: 10px;
+	resize: none;
+}
+.Update {
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #efefef;
+}
+.Update:hover {
+	background-color:#cfc2c2;
+}
+.button {
+	cursor:pointer; 
+	margin-top:10px;
+	width: 120px; 
+	height: 30px;
+}
+.buttonA {
+	padding: 8px;
+	border: 1px solid black; 
+    border-radius: 5px; 
+    background-color: #efefef;
+	cursor:pointer;
+}
+#addForm {
+	display:none;
+}
